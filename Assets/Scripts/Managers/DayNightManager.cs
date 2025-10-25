@@ -13,9 +13,9 @@ public class DayNightManager : MonoBehaviour
     
     public void TriggerCycleChange()
     {
-        //Functionality to unload current cycle objects.
-        
         _currentCycleIndex = 1 - _currentCycleIndex;
+        
+        GameManger.Instance.objectLoader.LoadCycleObjects(GetTimeCycle());
     }
 
     public TimeCycle GetTimeCycle()
