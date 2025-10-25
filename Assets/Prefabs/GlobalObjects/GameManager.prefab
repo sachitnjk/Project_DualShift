@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3884032768778201656}
   - component: {fileID: 7270421285979702083}
+  - component: {fileID: 7241949945540257278}
+  - component: {fileID: 5919970400364749234}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -44,3 +46,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c348dced6b8d8349acbbf3851d00e8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dayNightManager: {fileID: 7241949945540257278}
+  objectLoader: {fileID: 5919970400364749234}
+--- !u!114 &7241949945540257278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2175156425976642431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0799d0d95b56874bb648dc3050eefcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5919970400364749234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2175156425976642431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9e70f916b0bd43478589e9e091c4d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dayCycleObjectsList: []
+  nightCycleObjectsList: []

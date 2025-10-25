@@ -1,16 +1,29 @@
+using System;
 using UnityEngine;
 
 public class GameManger : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public static GameManger Instance { get; private set; }
+    
+    //Public references
+    public DayNightManager dayNightManager;
+    public ObjectLoader objectLoader;
+
+    private void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
         
+        DontDestroyOnLoad(this);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        if (dayNightManager != null)
+        {
+            dayNightManager.Initialize();
+        }
     }
 }
